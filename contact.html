@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <link rel="shortcut icon" href="images/dog-programming-on-a-computer.jpg" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://placehold.co/200x70"
+        alt="Drake Estilette's personal logo"
+      />
+      <h1>Contact Me</h1>
+      <nav>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 id="contact-head">Contact Form</h2>
+    <form action="" method="post" id="contact-form">
+      <label class="standard-label" for="contact-email">Email:</label>
+      <input type="email" id="contact-email" required />
+      <label class="standard-label" for="contact-number">Text:</label>
+      <input type="tel" id="contact-number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+      <label class="standard-label" for="message-request">Message:</label>
+      <textarea maxlength="240" id="message-request"></textarea>
+      <input type="submit" value="Send Message" />
+      <!--<button type="submit">Send Message</button>-->
+    </form>
+    <footer>
+      <p>If you'd like to get in touch, please email me at:</p>
+      <a href="mailto:drakeestilette516@gmail.com"
+        >drakeestilette516@gmail.com</a
+      >
+      <a href="tel:+14096733484">Text Me</a>
+      <a href="mailto:drakeestilette516@gmail.com">Contact Me</a>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
