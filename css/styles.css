@@ -3,6 +3,9 @@
    text color: #090909
    accessory color: #FF2E00
    alternate color: #374F2F  use white text with this color */
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #95b2b8;
 
@@ -59,12 +62,13 @@ button:focus {
 }
 .page-footer {
   clear: both;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  height: 400px;
 }
 .skills-table {
   margin: 0 auto;
