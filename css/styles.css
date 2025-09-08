@@ -50,3 +50,35 @@ button:focus {
   font-weight: bold;
   text-decoration: none;
 }
+.profile__portrait {
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+.page-footer {
+  clear: both;
+  text-align: center;
+}
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 400px;
+}
+.skills-table {
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 50%;
+}
+.hobbies-list {
+  margin: 0 auto;
+  width: 30%;
+}
+/* .about-me {
+  text-align: center;
+} */
+#basic-info-paragraph {
+  max-width: 50%;
+  margin: 0 auto;
+}
