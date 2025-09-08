@@ -1,4 +1,52 @@
+/* background color: #95b2b8
+   main color: #7EB77F
+   text color: #090909
+   accessory color: #FF2E00
+   alternate color: #374F2F  use white text with this color */
 body {
-  background-color: lightgrey;
+  background-color: #95b2b8;
+
   font-family: "Roboto Condensed", sans-serif;
+}
+a {
+  color: #ff2e00;
+}
+a:visited {
+  color: #374f2f;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  color: #7eb77f;
+}
+button {
+  padding: 10px;
+
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+
+  background-color: #374f2f;
+
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+}
+button:hover,
+button:focus {
+  background-color: #7eb77f;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.button_secondary {
+  background-color: #ff2e00;
+
+  color: black;
+}
+.navigation-list__item--active {
+  font-weight: bold;
+  text-decoration: none;
 }
