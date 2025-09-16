@@ -24,10 +24,12 @@ a:focus {
 a:active {
   color: #7eb77f;
 }
-button {
+button,
+.button {
   padding: 10px;
 
   border: none;
+  display: inline-block;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 
@@ -37,17 +39,15 @@ button {
   font-family: inherit;
   font-size: 16px;
   text-decoration: none;
+  transition-duration: 0.4s;
+  transition-property: opacity;
 }
 button:hover,
-button:focus {
-  background-color: #7eb77f;
+button:focus,
+.button:hover,
+.button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-.button_secondary {
-  background-color: #ff2e00;
-
-  color: black;
 }
 .navigation-list {
   list-style-type: none;
@@ -85,6 +85,7 @@ button:focus {
 .hobbies-list {
   margin: 0 auto;
   width: 30%;
+  list-style-type: none;
 }
 .page-header {
   display: flex;
@@ -110,7 +111,65 @@ button:focus {
 .grid__item {
   background-color: #374f2f;
 }
+.about-center {
+  text-align: center;
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 #basic-info-paragraph {
   max-width: 50%;
   margin: 0 auto;
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
 }
